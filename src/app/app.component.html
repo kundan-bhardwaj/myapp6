@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <title>home page</title>
         <link rel="stylesheet" href="app.component.css" type="text/css" />
     </head>
     <body>
-        <div id="sidebar">
-            <button class="buttons" type=""></button>
-            <button class="buttons" type=""></button>
-            <button class="buttons" type=""></button>
-            <button class="buttons" type=""></button>
+        <div>
+            <nav id="navbar">
+                <mat-icon id="button" (click) = "show()">home</mat-icon>
+            </nav>
+            <div id="sidebar">
+                <button id="home" class="buttons" type=""></button>
+                <button id="explore" class="animate__animated animate__bounce buttons" type=""></button>
+                <button id="blogs" class="animate__animated animate__bounce buttons" type=""></button>
+                <button id="you" class="animate__animated animate__bounce buttons" type=""></button>
+            </div>
+            <div id="content">
+            </div>
         </div>
     </body>
 </html>
