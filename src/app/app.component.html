@@ -2,22 +2,24 @@
 <html>
     <head>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <title>home page</title>
         <link rel="stylesheet" href="app.component.css" type="text/css" />
     </head>
     <body>
-        <div>
-            <nav id="navbar">
-                <mat-icon id="button" (click) = "show()">home</mat-icon>
-            </nav>
+        <div id="card">
             <div id="sidebar">
-                <button id="home" class="buttons" type=""></button>
-                <button id="explore" class="animate__animated animate__bounce buttons" type=""></button>
-                <button id="blogs" class="animate__animated animate__bounce buttons" type=""></button>
-                <button id="you" class="animate__animated animate__bounce buttons" type=""></button>
+                <button id="home" class="buttons" type=""><mat-icon id="button">home</mat-icon></button>
+                <button id="explore" class="buttons" type=""><mat-icon id="button">explore</mat-icon></button>
+                <button id="blogs" class="buttons" type=""><mat-icon id="button">book</mat-icon></button>
+                <button id="you" class="buttons" type=""><mat-icon id="button">face</mat-icon></button>
             </div>
-            <div id="content">
+            <div id="content" >
+                <h4 class="hint">if don't have a account</h4>
+                <hr />
+                <button class="ac" type="submit">sign up</button>
+                <br />
+                <h4 class="hint">if already have an account</h4>
+                <hr />
+                <button class="ac" type="submit">sign in</button>
             </div>
         </div>
     </body>
